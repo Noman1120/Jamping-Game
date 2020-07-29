@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+.game{
+    width: 500px;
+    height: 200px;
+    border: 1px solid rgb(36, 33, 33);
+    margin: auto;
+    border-radius: 5px;
+}
+#character{
+    width: 20px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: rgb(124, 19, 19);
+    position:relative;
+    top: 150px;
+}
+.animate{
+    animation: jump 0.3s linear;
+}
+@keyframes jump{
+    0%{top: 150px;}
+    30%{top: 100px;}
+    70%{top: 100px;}
+    100%{top: 150px;}
+}
+
+#block{
+    background-color: blue;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: relative;
+    top: 130px;
+    left: 500px;
+    animation: block 1s infinite linear;
+}
+@keyframes block{
+    0%{left: 500px}
+    100%{left: -20px}
+}
+h4{
+    text-align: center;
+}
+footer{
+    text-align: center;
+    margin-top: 50px;
+    color: rgb(71, 71, 71);
+    font-size: 18px;
+}
